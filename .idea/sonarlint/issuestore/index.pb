@@ -23,3 +23,17 @@ U
 +src/SingleLinkedList/MiddleValueOfList.java,9\5\95871e4bb3d28189a9f2fec909b7c7697a497a30
 A
 src/Map/User.java,6\5\651faeda47b8ea9511cce32a83123b7d12e902bf
+^
+.src/exceptionHandling/myFunctionInterface.java,c\2\c2c5aa940b28ce5a653da0d3ed34377b3f53a38a
+V
+&src/exceptionHandling/Annotations.java,e\4\e437928ddb839251500c7bb26ef067f37824fc67
+V
+&src/exceptionHandling/TryAndCatch.java,7\b\7b027429156e56f2be586df2fac233a483663665
+Q
+!src/exceptionHandling/Throws.java,9\6\96d245ceec2bb8dac5d708654c10b6157b30370c
+K
+src/Movie_Rating/Movie.java,3\0\301223e1e78802577ea84ea1c1caca7d75df0526
+Q
+!src/Movie_Rating/MovieRating.java,1\2\1201244936c372da3c09c5d3723b18833d44447e
+c
+3src/DoubleLinkedList/services/DoubleLinkedList.java,4\f\4fe4f4b4209e2ce25bc20900db535aa7296bf733

@@ -113,7 +113,7 @@ public class MovieRatingServiceImpl implements MovieRatingService{
                 hashMap.put(movieRating.getMovieId(), n);
             }
         }
-        displayAvg(hashMap);
+        displayAvgRating(hashMap);
     }
     @Override
     public int checkYear(int releaseYear) {
@@ -124,7 +124,7 @@ public class MovieRatingServiceImpl implements MovieRatingService{
         return 0;
     }
     @Override
-    public void displayAvg(Map<Integer, Float> hashMap) {
+    public void displayAvgRating(Map<Integer, Float> hashMap) {
         System.out.print("Movies Rating");
         System.out.println("\nMovie id\t Movie rating \t");
 

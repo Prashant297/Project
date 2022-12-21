@@ -17,7 +17,7 @@ public interface MovieRatingService {
     void displayMovies(Map<Integer, Movie> map);
     void addMovie(Map<Integer, Movie> map,Map<String,MovieRating> ratemap);
     void ratingDetail(Map<String, MovieRating> rateMap, Map<Integer, Movie> map);
-    void displayAvg(Map<Integer,Float> hashMap);
+    void displayAvgRating(Map<Integer,Float> hashMap);
     void displayRating(Map<String, MovieRating> maps);
     void ratingAverage(Map<String, MovieRating> rateMap, Map<Integer, Float> hashMap, int select);
 }
