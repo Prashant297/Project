@@ -1,0 +1,12 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˇœºÅ¸ˇˇˇˇ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˇœºÅ¸ˇˇˇˇ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(œŸ∆Ó˝ˇˇˇˇ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®Î≤µ¸ˇˇˇˇ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àçµÛ
+h	java:S100%"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˇÀˇ™¸ˇˇˇˇ
+;
+java:S1659(" Declare "tt" on a separate line.(ÊÃ€√˙ˇˇˇˇ
+c	java:S100@"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(∏Œ˘˛
+S
+java:S1659M">Declare "m" and all following declarations on a separate line.(å’≈^

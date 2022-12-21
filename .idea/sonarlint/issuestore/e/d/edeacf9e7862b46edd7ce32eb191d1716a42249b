@@ -1,0 +1,10 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˇœºÅ¸ˇˇˇˇ
+k	java:S1172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˘‰ä≥¯ˇˇˇˇ
+k	java:S1173"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É∆¨≈˛ˇˇˇˇ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(œŸ∆Ó˝ˇˇˇˇ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®Î≤µ¸ˇˇˇˇ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îÀÙ´¯ˇˇˇˇ
+c	java:S100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(∏Œ˘˛
+S
+java:S16596">Declare "m" and all following declarations on a separate line.(å’≈^

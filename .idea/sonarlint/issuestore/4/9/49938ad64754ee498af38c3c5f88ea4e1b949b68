@@ -1,0 +1,9 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò…­«þÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ö¾
+Z
+java:S1659"DDeclare "element" and all following declarations on a separate line.(ò»·õ
+>
+java:S1481"(Remove this unused "add" local variable.(ò»·õ
+\
+java:S1659"ADeclare "temp" and all following declarations on a separate line.(ÿ¤‘Äøÿÿÿÿ
