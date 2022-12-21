@@ -39,6 +39,10 @@ public class ServiceImp implements UserService {
         }
     }
 
+
+
+
+
     String uniqeString() {
         UUID uniqueString = UUID.randomUUID();
         return uniqueString.toString().substring(30);
