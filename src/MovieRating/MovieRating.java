@@ -1,16 +1,27 @@
-package Movie_Rating;
+package MovieRating;
 
 public class MovieRating {
     int userId;
-    int movieId;
+    String movieId;
     int rating;
     String description;
+
+    public MovieRating(int userId, String movieId, int rating, String description) {
+        this.userId = userId;
+        this.movieId = movieId;
+        this.rating = rating;
+        this.description = description;
+    }
+
+    public MovieRating() {
+
+    }
 
     public int getUserId() {
         return userId;
     }
 
-    public int getMovieId() {
+    public String getMovieId() {
         return movieId;
     }
 
@@ -26,7 +37,7 @@ public class MovieRating {
         this.userId = userId;
     }
 
-    public void setMovieId(int movieId) {
+    public void setMovieId(String movieId) {
         this.movieId = movieId;
     }
 
@@ -38,11 +49,5 @@ public class MovieRating {
         this.description = description;
     }
 
-    public MovieRating(int userId, int movieId, int rating, String description){
-        this.userId = userId;
-        this.movieId = movieId;
-        this.rating = rating;
-        this.description = description;
-    }
 
 }

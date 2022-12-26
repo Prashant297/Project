@@ -1,0 +1,11 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØÜ¢Àÿÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô¾Š¨şÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…€áÑ
+f	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À«´Ç
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¿ú²åşÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ö¾
+d	java:S116"ORename this field "P_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú­ûÒ
+k	java:S116"QRename this field "P_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏŸ¹ƒÿÿÿÿÿ
+g	java:S116"RRename this field "P_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼›îÍ
+k	java:S116"QRename this field "P_size" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îİàÏÿÿÿÿÿ
