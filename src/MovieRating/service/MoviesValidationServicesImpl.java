@@ -8,17 +8,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
-public class MoviesValidationServicesImpl implements MoviesValidtionService{
-
-
+public class MoviesValidationServicesImpl implements MoviesValidtionService {
     @Override
     public void role(Map<String, Movie> map, Map<String, MovieRating> rateMap) {
         Scanner sc = new Scanner(System.in);
         MoviesServicesImpl moviesService = new MoviesServicesImpl();
         MovieRatingServiceImpl movieRatingService = new MovieRatingServiceImpl();
 
-        Map<String,Integer> adminLogin = new HashMap<>();
-        adminLogin.put("Prashant",1234);
+        Map<String, Integer> adminLogin = new HashMap<>();
+        adminLogin.put("Prashant", 1234);
 
         int r;
         System.out.println("Login as \n1.Admin \n 2.User \n 3.Exit");
@@ -26,20 +24,21 @@ public class MoviesValidationServicesImpl implements MoviesValidtionService{
         switch (r) {
             case 1:
                 System.out.println("Enter Admin Id");
-                String adminId= sc.next();
+                String adminId = sc.next();
                 System.out.println("Enter Password");
-                int password=sc.nextInt();
-                if (adminLogin.containsKey(adminId) && adminLogin.containsValue(password))
-                {
-                    moviesService.movies(map,r,rateMap);
-                }else {
+                int password = sc.nextInt();
+                if (adminLogin.containsKey(adminId) && adminLogin.containsValue(password)) {
+                    moviesService.movies(map, r, rateMap);
+                } else {
                     System.out.println("Invalid AdminId or Password");
                     System.out.println("--------------------------------------------------------------------------------------------------------");
-                    role(map,rateMap);
+                    role(map, rateMap);
                 }
                 break;
             case 2:
-                if(moviesService.movies(map, r, rateMap)==1){break;}
+                if (moviesService.movies(map, r, rateMap) == 1) {
+                    break;
+                }
                 System.out.println("Welcome to Rating Interface");
                 System.out.println("Rate the Movies");
                 movieRatingService.ratingDetail(rateMap, map);
@@ -48,14 +47,16 @@ public class MoviesValidationServicesImpl implements MoviesValidtionService{
                 break;
         }
     }
+
     @Override
     public int checkYear(int releaseYear) {
-        if (releaseYear<1800 || releaseYear>3000) {
+        if (releaseYear < 1800 || releaseYear > 3000) {
             System.out.println("Cannot enter Movie year less than 1800 and more than 3000");
             return 1;
         }
         return 0;
     }
+
     @Override
     public int checkMovieId(Map<String, Movie> map, String mid, List<String> list) {
         MovieRatingServiceImpl.movieStatus enumVal = MovieRatingServiceImpl.movieStatus.FUTURE;
@@ -78,6 +79,7 @@ public class MoviesValidationServicesImpl implements MoviesValidtionService{
         }
         return 0;
     }
+
     @Override
     public int checkRating(int rate) {
         if (rate < 0 || rate > 5) {
@@ -86,6 +88,7 @@ public class MoviesValidationServicesImpl implements MoviesValidtionService{
         }
         return 0;
     }
+
     @Override
     public MovieRatingServiceImpl.movieStatus checkStatus(int year) {
         if (year < 2022) {

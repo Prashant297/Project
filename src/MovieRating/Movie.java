@@ -2,6 +2,8 @@ package MovieRating;
 
 import MovieRating.service.MovieRatingServiceImpl;
 
+import java.time.LocalDate;
+
 public class Movie {
     public MovieRatingServiceImpl.movieStatus getMovieStatus() {
         return movieStatus;
@@ -14,9 +16,17 @@ public class Movie {
     int currentPrice;
     int previousPrice;
     int incomeInCr;
-
+    LocalDate date;
     public Movie() {
 
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
     public String getMovieName() {
@@ -71,7 +81,7 @@ public class Movie {
         this.incomeInCr = incomeInCr;
     }
 
-    public Movie( MovieRatingServiceImpl.movieStatus movieStatus, String movieName, int releaseYear, String cast, int currentPrice, int previousPrice, int incomeInCr) {
+    public Movie( MovieRatingServiceImpl.movieStatus movieStatus, String movieName, int releaseYear, String cast, int currentPrice, int previousPrice, int incomeInCr,LocalDate date) {
         this.movieStatus = movieStatus;
         this.movieName = movieName;
         this.releaseYear = releaseYear;
@@ -79,5 +89,6 @@ public class Movie {
         this.currentPrice = currentPrice;
         this.previousPrice = previousPrice;
         this.incomeInCr = incomeInCr;
+        this.date = date;
     }
 }

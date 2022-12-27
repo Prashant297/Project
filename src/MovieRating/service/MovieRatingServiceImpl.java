@@ -47,26 +47,25 @@ public class MovieRatingServiceImpl implements MovieRatingService{
     @Override
     public void ratingDetail(Map<String, MovieRating> rateMap, Map<String, Movie> map) {
         Scanner sc = new Scanner(System.in);
-        final Map<String, Float> movieRatingMap = new HashMap<>();
+       final Map<String, Float> movieRatingMap = new HashMap<>();
         final List<String> list = new ArrayList<>();
         MovieRatingServiceImpl movieRatingService = new MovieRatingServiceImpl();
         MoviesValidationServicesImpl moviesValidationServices = new MoviesValidationServicesImpl();
         final MovieRating movieRating = new MovieRating();
         int i = 0;
-        String select;
+        String movieId;
         int rate;
         String describe;
 
         System.out.println("Enter user id");
         int use = sc.nextInt();
         movieRating.setUserId(use);
-        while (i <= 1) {
-
+        while (true) {
             System.out.println("Select  Movie id you want to Rate");
-            select = sc.next();
-            movieRating.setMovieId(select);
+            movieId = sc.next();
+            movieRating.setMovieId(movieId);
 
-            if (moviesValidationServices.checkMovieId(map, select, list) == 1) {
+            if (moviesValidationServices.checkMovieId(map, movieId, list) == 1) {
                 System.out.println("Invalid MovieID");
                 System.out.println("-----------------------------------------");
                 System.out.println();
@@ -85,13 +84,14 @@ public class MovieRatingServiceImpl implements MovieRatingService{
 
             LocalDateTime localDateTime = LocalDateTime.now();
             String dateTime = localDateTime.format(formatter);
-            rateMap.put(dateTime, new MovieRating(movieRating.getUserId(), movieRating.getMovieId(), movieRating.getRating(), movieRating.getDescription()));
+            rateMap.put(dateTime, new MovieRating(movieRating.getUserId(),movieRating.getMovieId(),
+                    movieRating.getRating(), movieRating.getDescription()));
 
             System.out.println("Enter \n 1.Continue \n 2.Display \n 3.Exit ");
             i = sc.nextInt();
             if (i == 2) {
                 movieRatingService.displayRating(rateMap);
-                movieRatingService.ratingAverage(rateMap, movieRatingMap, select);
+                movieRatingService.ratingAverage(rateMap, movieRatingMap, movieId);
                 System.out.println("Enter \n 1.Continue \n 2.Display \n 3.Exit ");
                 i = sc.nextInt();
             }
@@ -99,6 +99,8 @@ public class MovieRatingServiceImpl implements MovieRatingService{
                 moviesValidationServices.role(map, rateMap);
             }
         }
+
+
     }
     @Override
     public void displayRating(Map<String, MovieRating> maps) {
