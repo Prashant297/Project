@@ -1,7 +1,7 @@
 
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˆæçê
 c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Ñ†Ù
 @
 java:S1197"*Move the array designators [] to the type.(Ø“õ√
 S
 java:S3972"7Move this "if" to a new line or add the missing "else".(ﬂ€Ê18¡Ú„Ä—0
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˆæçê

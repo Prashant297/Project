@@ -2,7 +2,7 @@ package ArrayList;
 
 import java.util.*;
 
-public class List {
+public class List<S> {
 
 
     public static void main(String[] args) {
